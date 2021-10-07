@@ -1,0 +1,99 @@
+<ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+  <ion-text color="dark">
+    <h5>Configuraciones</h5>
+  </ion-text>
+  <ion-list>
+    <ion-item>
+      <ion-label>Utilizar fecha por red</ion-label>
+      <ion-toggle [(ngModel)]="pepperoni"></ion-toggle>
+    </ion-item>
+  
+    <ion-item style="height: 1000px;">
+      <ion-label>Añadir Color</ion-label>
+      <ion-toggle [(ngModel)]="sausage"></ion-toggle>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label>Brillo Automatico</ion-label>
+      <ion-toggle [(ngModel)]="mushrooms"></ion-toggle>
+    </ion-item>
+  
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="primary">
+        <ion-title>Opciones</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Perfil</ion-item>
+        <ion-item>Notificaciones</ion-item>
+        <ion-item>Novedades</ion-item>
+        <ion-item>Recordatorios</ion-item>
+        <ion-item>Configuraciones</ion-item>
+        <ion-item>Cerrar sesion</ion-item>
+        <ion-item>Ayuda</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-menu side="start" menuId="custom" contentId="main" class="my-custom-menu">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Opciones</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>
+          <ion-icon name="person-outline" slot="start"></ion-icon>
+          <ion-label>Perfil</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="notifications-outline" slot="start"></ion-icon>
+          <ion-label>Notificaciones</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="newspaper-outline" slot="start"></ion-icon>
+          <ion-label>Novedades</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="calendar-number-outline" slot="start"></ion-icon>
+          <ion-label>Recordatorios</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="settings-outline" slot="start"></ion-icon>
+          <ion-label>Configuraciones</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="power-outline" slot="start"></ion-icon>
+          <ion-label>Cerrar sesion</ion-label>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="help-circle-outline" slot="start"></ion-icon>
+          <ion-label>Ayuda</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-menu side="end" type="push" contentId="main">
+    <ion-header>
+      <ion-toolbar color="danger">
+        <ion-title>End Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+        <ion-item>Menu Item</ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+  <ion-router-outlet id="main"></ion-router-outlet>

@@ -1,0 +1,102 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-butons slot="start">
+            <ion-menu-button  color="tertiary" menu="first"></ion-menu-button>
+        </ion-butons>
+
+        <ion-grid>
+            <ion-row>
+                <ion-col size="8">
+                    <ion-searchbar showCancelButton="focus" animated></ion-searchbar>
+                </ion-col>
+                <ion-col size="1">
+                    <ion-img src="assets/media/duoc.png" class="logo"></ion-img>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+</ion-header>
+  
+  <!-- Menu -->
+
+<ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title class="titulo">Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+        <ion-list>
+            <ion-item>
+              <ion-icon name="person"></ion-icon>
+              <ion-label id="pad"> Perfil</ion-label>
+              <ion-icon name="arrow-forward-circle" style="object-position: right;"></ion-icon>
+            </ion-item>
+            <ion-item>
+                <ion-icon name="notifications"></ion-icon>
+                <ion-label id="pad"> Notificaciones</ion-label>
+                <ion-toggle style="object-position: right;"></ion-toggle>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="settings"></ion-icon>
+              <ion-label id="pad"> Configuraciones</ion-label>
+              <ion-icon name="arrow-forward-circle" style="object-position: right;"></ion-icon>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="help-buoy"></ion-icon>
+              <ion-label id="pad">Ayuda</ion-label>
+              <ion-icon name="arrow-forward-circle" style="object-position: right;"></ion-icon>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="power"></ion-icon>
+              <ion-label id="pad"> Cerrar Sesion</ion-label>
+              <ion-icon name="arrow-forward-circle" style="object-position: right;"></ion-icon>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+
+  <!-- Mapa -->
+<ion-content class="fondo">
+  <ion-fab vertical="top" horizontal="start" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-row class="ajustar">
+    <ion-card>
+      <ion-slides>
+        <ion-slide>
+          <ion-img src="assets/media/piso1.jpg"></ion-img>
+        </ion-slide>
+        <ion-slide>
+          <ion-img src="assets/media/piso2.jpg"></ion-img>
+        </ion-slide>
+      </ion-slides>
+    </ion-card>
+  </ion-row>
+</ion-content>
+  
+<ion-footer>
+  <ion-toolbar>
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        <ion-tab-button href="./inicio">
+          <ion-icon name="map"></ion-icon>
+          <ion-label>Mapa</ion-label>
+        </ion-tab-button>
+      
+        <ion-tab-button href="./recordatorio">
+          <ion-icon name="calendar"></ion-icon>
+          <ion-label>Recordatorios</ion-label>
+        </ion-tab-button>
+          
+        <ion-tab-button href="./novedades">
+          <ion-icon name="newspaper"></ion-icon>
+          <ion-label>Novedades</ion-label>
+        </ion-tab-button>
+      </ion-tab-bar>
+    </ion-tabs>
+  </ion-toolbar>
+</ion-footer>    
